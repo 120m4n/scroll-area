@@ -228,11 +228,7 @@
         
         function setOrientation(id, orientation) {
             const scrollArea = document.getElementById(id);
-            if (orientation) {
-                scrollArea.orientation = orientation;
-            } else {
-                scrollArea.removeAttribute('orientation');
-            }
+            scrollArea.orientation = orientation;
         }
         
         // Listen to orientation changes and update status

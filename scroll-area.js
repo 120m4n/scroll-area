@@ -177,9 +177,9 @@ class ScrollArea extends HTMLElement {
     const container = this.shadowRoot.querySelector('.scroll-container');
     if (container) {
       if (this.orientation === 'horizontal') {
-        container.scrollLeft = container.scrollWidth;
+        container.scrollLeft = container.scrollWidth - container.clientWidth;
       } else {
-        container.scrollTop = container.scrollHeight;
+        container.scrollTop = container.scrollHeight - container.clientHeight;
       }
     }
   }
